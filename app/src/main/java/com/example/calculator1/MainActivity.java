@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
-                sum(a,b);
+                sum();
 
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
-                mul(a,b);
+                mul();
             }
         });
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
-                sub(a,b);
+                sub();
             }
         });
 
@@ -63,31 +63,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
-                div(a,b);
+                div();
             }
         });
 
     }
     @SuppressLint("SetTextI18n")
-    public void sum(double a, double b)
+    public void sum()
     {
          s=(a+b);
         t1.setText("The Sum is "+s);
     }
 
-    public void mul(double a,double b)
+    public void mul()
     {
          s=a*b;
         t1.setText("The Answer is "+ s);
     }
 
-    public void sub(double a,double b)
+    public void sub()
     {
         s=a-b;
         t1.setText("The Answer is "+s);
     }
 
-    public void div(double a,double b)
+    public void div()
     {
         s=a/b;
         t1.setText("The Answer is "+s);
