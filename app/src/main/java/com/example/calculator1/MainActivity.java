@@ -9,14 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+{
     Button plus,minus,divide,multiply;
     double a,b,s;
     EditText fn,sn;
     TextView t1;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         plus=findViewById(R.id.PLUS);
@@ -31,36 +32,44 @@ public class MainActivity extends AppCompatActivity {
     public  void calculate()
     {
 
-        plus.setOnClickListener(new View.OnClickListener() {
+        plus.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
                 sum();
 
             }
         });
-        multiply.setOnClickListener(new View.OnClickListener() {
+        multiply.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
                 mul();
             }
         });
 
-        minus.setOnClickListener(new View.OnClickListener() {
+        minus.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
                 sub();
             }
         });
 
-        divide.setOnClickListener(new View.OnClickListener() {
+        divide.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 a=Double.parseDouble(fn.getText().toString());
                 b=Double.parseDouble(sn.getText().toString());
                 div();
