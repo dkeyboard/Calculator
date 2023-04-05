@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity
     public void sum()
     {
          s=(a+b);
-        t1.setText("The Sum is "+s);
+        t1.setText("The Answer is "+s);
     }
 
     public void mul()
