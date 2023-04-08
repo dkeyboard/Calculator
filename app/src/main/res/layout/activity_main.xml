@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
 
-
     <TableRow
         android:id="@+id/tableRow"
         android:layout_width="400dp"
@@ -25,16 +24,22 @@
             android:layout_height="wrap_content"
             android:text="+" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
         <Button
             android:id="@+id/MINUS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-" />
+
         <Button
             android:id="@+id/MULTIPLY"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="x" />
+
         <Button
             android:id="@+id/DIVIDE"
             android:layout_width="wrap_content"
@@ -56,7 +61,7 @@
     <EditText
         android:id="@+id/firstnumber"
         android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="First Number"
         android:inputType="numberDecimal"
@@ -70,7 +75,7 @@
     <EditText
         android:id="@+id/secondnumber"
         android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Second Number"
         android:inputType="numberDecimal"
@@ -79,5 +84,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.279" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
